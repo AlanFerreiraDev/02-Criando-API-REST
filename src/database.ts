@@ -5,4 +5,5 @@ export const knex = setupKanex({
   connection: {
     filename: './tmp/app.db',
   },
+  useNullAsDefault: true,
 })
