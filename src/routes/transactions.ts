@@ -4,7 +4,7 @@ import { z } from 'zod'
 import { knex } from '../database'
 import { checkSessionIdExists } from '../middlewares/check-session-id-exists'
 
-export function transactionRoutes(app: FastifyInstance) {
+export function transactionsRoutes(app: FastifyInstance) {
   app.addHook('preHandler', async (request, reply) => {
     console.log(`[${request.method}] ${request.url}`)
   })
